@@ -66,80 +66,109 @@
 
 // exercicio 1:
 
-const p = 10;
-const v = 20;
-const precofinal = p-v;
-console.log("o preço final com desconto é:", precofinal)
+// const p = 10;
+// const v = 20;
+// const precofinal = p-v;
+// console.log("o preço final com desconto é:", precofinal)
 
 
-// exercicio 2:
+// // exercicio 2:
 
-const login= 1;
-const token = 100;
-const transacaoautorizada = login === 1 && token >= 10;
-
-
+// const login= 1;
+// const token = 100;
+// const transacaoautorizada = login === 1 && token >= 10;
 
 
-// ESTRUTURA CONDICIONAL:
 
-if(true){
-    console.log("é Verdadeiro")
+
+// // ESTRUTURA CONDICIONAL:
+
+// if(true){
+//     console.log("é Verdadeiro")
+// }
+
+// //if/else
+
+// let nome="fiap";
+
+// if(nome="fiap"){
+//     console.log("nome verdadeiro")
+// }else{
+//     console.log("nome errado")
+// }
+// // if encadeado ou animado
+
+// let idade = 17;
+
+// if(idade <= 13){
+//     console.log("é uma criança")
+// }else if(idade> 13 && idade <=18){
+//     console.log("é um adolescente")
+// }else if(idade >18 && idade <=59)
+//     console.log("é um adulto")
+// else{
+//     console.log("é um idoso")
+// }
+
+// // switch case
+
+// let times="santos";
+
+// switch(times){
+//     case "santos":
+//         console.log("um time idoso")
+//         break;
+//     case "sao paulo":
+//         console.log("time panetone")
+//         break
+//     case "palmeiras":
+//         console.log("sem mundial")
+//     case "corinthians":
+//         console.log(".")
+//     default:
+//         console.log('é tao ruim quanto a selecao brasileira')
+// }
+
+// // ternario
+
+// let salario=100;
+// let resultado = salario ==100 ? "salario certo":"salarioerrado"
+// console.log(resultado)
+
+// let usuario="fiap"
+// let userlogado= usuario ==="fiap"?"logado com sucesso":"usuario invalido"
+// console.log(userlogado);
+
+// function verificarparimpar(nunmero){
+//     return numero % 2 === 0 ?"par":"impar";
+// }
+// console.log(verificarparimpar(245))
+
+//estrutura de repetiçao (laço de repetiçao)
+
+//for - estrutura de repeticao mais utilizada quando sabemos previamente quantas vezes o codigo vai ser executado
+
+//declaraçao, operaçao, incremento
+for(let i=1; i<5;i++){
+    console.log("numero:",i);
+}
+// for para array
+
+const linguagens = ["java","python","c#", "php"];
+
+for( let i=0; i < linguagens.length;i++){
+    console.log("linguagem",i ,":", linguagens[i]);
 }
 
-//if/else
+const tecnologias =["js", "html", "css"]
 
-let nome="fiap";
-
-if(nome="fiap"){
-    console.log("nome verdadeiro")
-}else{
-    console.log("nome errado")
-}
-// if encadeado ou animado
-
-let idade = 17;
-
-if(idade <= 13){
-    console.log("é uma criança")
-}else if(idade> 13 && idade <=18){
-    console.log("é um adolescente")
-}else if(idade >18 && idade <=59)
-    console.log("é um adulto")
-else{
-    console.log("é um idoso")
+for(const tech of tecnologias){
+    console.log("estudando",tech)
 }
 
-// switch case
+const carros ={marca:"volks",modelo:"fusca",ano:1980};
 
-let times="santos";
-
-switch(times){
-    case "santos":
-        console.log("um time idoso")
-        break;
-    case "sao paulo":
-        console.log("time panetone")
-        break
-    case "palmeiras":
-        console.log("sem mundial")
-    case "corinthians":
-        console.log(".")
-    default:
-        console.log('é tao ruim quanto a selecao brasileira')
+for( let dados in carros){
+    console.log(dados, ":", carros[dados])
 }
 
-// ternario
-
-let salario=100;
-let resultado = salario ==100 ? "salario certo":"salarioerrado"
-console.log(resultado)
-
-let usuario="fiap"
-let userlogado= usuario ==="fiap"?"logado com sucesso":"usuario invalido"
-console.log(userlogado);
-
-function verificarparimpar(nunmero){
-    return numero % 2 === 0 ?"par":"impar";
-}
-console.log(verificarparimpar(245))
